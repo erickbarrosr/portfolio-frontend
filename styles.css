@@ -7,6 +7,7 @@ body {
   padding: 0px;
   background-color: #f8f8ff;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -16,10 +17,50 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h1.titulo-navigation {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2.cinza {
+  color: #808080;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #808080;
+}
+
 p {
   font-size: 24px;
   line-height: 28px;
   max-width: 70%;
+  color: #1c1c1c;
+}
+
+p.technologies-card-paragraph {
+  font-size: 16px;
+  margin: 0px;
+  text-align: center;
+}
+
+p.projects-card-paragraph {
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 button {
@@ -36,12 +77,17 @@ button {
   cursor: pointer;
 }
 
+li {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
 .section-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -53,14 +99,6 @@ button {
   width: 1260px;
   height: 88px;
   margin-top: 32px;
-}
-
-h1.titulo-navigation {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
-  color: #1c1c1c;
-  cursor: pointer;
 }
 
 .links-navigation {
@@ -95,4 +133,107 @@ h1.titulo-navigation {
   margin-right: 24px;
   cursor: pointer;
   margin-top: 8px;
+}
+
+.technologies-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.technologies-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 36px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.technologies-card {
+  width: 312px;
+  height: 700px;
+  border-width: 2px;
+  border-color: #1c1c1c;
+  border-radius: 12px;
+  border-style: solid;
+}
+
+.technologies-card-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icons-image {
+  width: 60px;
+  height: 60px;
+  padding: 16px 12px;
+}
+
+.technologies-card-list {
+  width: 80%;
+}
+
+.section-portfolio {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0px 64px 0px;
+}
+
+.section-portfolio-grid {
+  display: grid;
+  width: 100%;
+  column-gap: 36px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  margin-top: 48px;
+}
+
+.section-portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 100%;
+  border-width: 2px;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-radius: 24px;
+}
+
+.section-portfolio-img {
+  width: 220px;
+  height: 156px;
+  padding: 12px;
+}
+
+.section-portfolio-card-links {
+  display: flex;
+  flex-direction: row;
+  width: 12%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-portfolio-card-icon-github {
+  width: 20px;
+  height: 100%;
+}
+
+.section-portfolio-card-icon-link {
+  width: 20px;
+  height: 100%;
 }
